@@ -7,26 +7,26 @@ After the Applause is a digital space designed to capture what it feels like to 
 
 Visitors can expect:
 
-A short reflective film set on NYUAD campus
+- A short reflective film set on NYUAD campus
 
-A gallery of campus locations
+- A gallery of campus locations
 
-An interactive section where they can write a farewell note and generate a downloadable memory card
+- An interactive section where they can write a farewell note and generate a downloadable memory card
 
 
 **Features**
 
-Fully responsive design for desktop, tablet, and mobile
+1. Fully responsive design for desktop, tablet, and mobile
 
-Clean, modern UI with soft, nostalgic visual styling
+2. Clean, modern UI with soft, nostalgic visual styling
 
-Embedded video player
+3. Embedded video player
 
-Interactive souvenir generator (text-on-image)
+4. Interactive souvenir generator (text-on-image)
 
-Image gallery with location names and captions
+5. Image gallery with location names and captions
 
-Smooth scroll transitions and subtle animations
+6. Smooth scroll transitions and subtle animations
 
 
 **Technologies Used**
