@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>After the Applause - A Short Film</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<!-- Navigation -->
+<nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#story">The Story</a></li>
+      <li><a href="#video">Watch Video</a></li>
+      <li><a href="#reflection">Reflection</a></li>
+      <li><a href="#about">About Me</a></li>
+    </ul>
+  </nav>
+  
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>After the Applause</h1>
+      <p>
+        A short film shot on campus after graduation — when the crowds are gone, but something lingers.
+      </p>
+      <p>
+        This project explores how spaces hold onto moments, even when we move on. It's about the feeling of returning to a place that's no longer the same, yet still familiar.
+      </p>
+    </div>
+  </section>
+
+<!-- Featured Projects -->
+<section class="carousel-section" id="story">
+    <div class="carousel-container">
+        <div class="images-container">
+            <!-- Replace these image paths with your actual image files -->
+            <div class="image-slide active" style="background-image: url('images/image1.jpg')">
+                <div class="image-overlay">
+                    <div class="image-title">A1 Residences</div>
+                    <div class="image-description">The place most of us first called home. Everyone started their freshmen year from this side.</div>
+                </div>
+            </div>
+            <div class="image-slide" style="background-image: url('images/image2.jpg')">
+                <div class="image-overlay">
+                    <div class="image-title">The Highline</div>
+                    <div class="image-description">A quiet bridge we all crossed — between classes, buildings, or just to clear our heads.</div>
+                </div>
+            </div>
+            <div class="image-slide" style="background-image: url('images/image3.jpg')">
+                <div class="image-overlay">
+                    <div class="image-title">Falcon Field</div>
+                    <div class="image-description">From sports days to early morning running track — we all have been there, if you haven't go and try.</div>
+                </div>
+            </div>
+            <div class="image-slide" style="background-image: url('images/image4.jpg')">
+                <div class="image-overlay">
+                    <div class="image-title">Arts Center Theater</div>
+                    <div class="image-description">Performances, lectures, and different shows — this space held a lot of big moments.</div>
+                </div>
+            </div>
+            <div class="image-slide" style="background-image: url('images/image5.jpg')">
+                <div class="image-overlay">
+                    <div class="image-title">Campus Aerial View</div>
+                    <div class="image-description">A view of everything — the places we rushed through and the ones we didn't want to leave.</div>
+                </div>
+            </div>
+            <div class="image-slide" style="background-image: url('images/image6.jpg')">
+                <div class="image-overlay">
+                    <div class="image-title">Baraha Lounge</div>
+                    <div class="image-description">Where people chilled, played pool, grabbed coffee, or just took a break from classes.</div>
+                </div>
+            </div>
+            <div class="image-slide" style="background-image: url('images/image7.jpg')">
+                <div class="image-overlay">
+                    <div class="image-title">Palms</div>
+                    <div class="image-description">A favorite walk across campus — always breezy, always peaceful.</div>
+                </div>
+            </div>
+            <div class="image-slide" style="background-image: url('images/image8.jpg')">
+                <div class="image-overlay">
+                    <div class="image-title">Campus Walk (with the Cat)</div>
+                    <div class="image-description">Classic NYUAD — quiet mornings, soft light, and a cat that is always sleeping there.</div>
+                </div>
+            </div>
+            <div class="image-slide" style="background-image: url('images/image9.jpg')">
+                <div class="image-overlay">
+                    <div class="image-title">A3 View from my room</div>
+                    <div class="image-description">A familiar sight on the way home. Especially nice when the lights were on in the evening.</div>
+                </div>
+            </div>
+            <div class="image-slide" style="background-image: url('images/image10.jpg')">
+                <div class="image-overlay">
+                    <div class="image-title">Arts Center at Dusk</div>
+                    <div class="image-description">When the sun set and the campus lights turned on — it always felt kind of cinematic.</div>
+                </div>
+            </div>
+        </div>
+
+        <button class="nav-btn prev-btn" onclick="prevImage()">‹</button>
+        <button class="nav-btn next-btn" onclick="nextImage()">›</button>
+
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+  </section>
+
+  <!-- Video Showcase -->
+  <section class="video-showcase" id="video">
+    <div class="container">
+      <h2 class="section-title">Video Showcase</h2>
+      <p class="video-description">Shot in summer 2025, this film captures the atmosphere of NYU Abu Dhabi after the graduating class has left. It's not about loss — it's about presence.</p>
+      <div class="video-container">
+        <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/SoSyWXxtcOE?autoplay=1&mute=1&controls=1&rel=0&showinfo=0&modestbranding=1&playsinline=1&enablejsapi=1&origin=window.location.origin&si=a7Kq2XmsaF62Ck1S" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; autoplay" 
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enhanced Souvenir Generator Section -->
+  <section class="souvenir-generator" id="reflection">
+    <div class="container">
+      <!-- Step 1: Message Input -->
+      <div class="souvenir-step active" id="step1">
+        <h2 class="section-title">Reflection</h2>
+        <p class="step-description">If this film made you remember something — or someone — leave a line for the campus below.</p>
+        
+        <div class="message-input-container">
+          <textarea 
+            id="souvenirMessage" 
+            placeholder="Enter your message here (max 200 characters)..."
+            maxlength="200"
+            rows="3"
+            style="white-space: pre-wrap;"
+          ></textarea>
+          <div class="char-counter">
+            <span id="souvenirCharCount">0</span>/200 characters
+          </div>
+        </div>
+        
+        <div class="step-actions">
+          <button class="souvenir-btn primary" id="nextToImages" disabled>
+            Next: Choose Image →
+          </button>
+        </div>
+      </div>
+
+      <!-- Step 2: Image Selection -->
+      <div class="souvenir-step" id="step2">
+        <h2 class="section-title">Choose Your Background</h2>
+        <div class="message-preview">
+          <strong>Your message:</strong> "<span id="messagePreview"></span>"
+        </div>
+        
+        <div class="souvenir-image-grid" id="souvenirImageGrid">
+          <div class="souvenir-image-option" data-image="images/image1.jpg">
+            <img src="images/image1.jpg" alt="Option 1" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="image-placeholder" style="display:none;">Image 1</div>
+          </div>
+          <div class="souvenir-image-option" data-image="images/image2.jpg">
+            <img src="images/image2.jpg" alt="Option 2" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="image-placeholder" style="display:none;">Image 2</div>
+          </div>
+          <div class="souvenir-image-option" data-image="images/image3.jpg">
+            <img src="images/image3.jpg" alt="Option 3" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="image-placeholder" style="display:none;">Image 3</div>
+          </div>
+          <div class="souvenir-image-option" data-image="images/image4.jpg">
+            <img src="images/image4.jpg" alt="Option 4" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="image-placeholder" style="display:none;">Image 4</div>
+          </div>
+          <div class="souvenir-image-option" data-image="images/image5.jpg">
+            <img src="images/image5.jpg" alt="Option 5" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="image-placeholder" style="display:none;">Image 5</div>
+          </div>
+          <div class="souvenir-image-option" data-image="images/image6.jpg">
+            <img src="images/image6.jpg" alt="Option 6" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="image-placeholder" style="display:none;">Image 6</div>
+          </div>
+          <div class="souvenir-image-option" data-image="images/image7.jpg">
+            <img src="images/image7.jpg" alt="Option 7" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="image-placeholder" style="display:none;">Image 7</div>
+          </div>
+          <div class="souvenir-image-option" data-image="images/image8.jpg">
+            <img src="images/image8.jpg" alt="Option 8" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="image-placeholder" style="display:none;">Image 8</div>
+          </div>
+          <div class="souvenir-image-option" data-image="images/image9.jpg">
+            <img src="images/image9.jpg" alt="Option 9" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="image-placeholder" style="display:none;">Image 9</div>
+          </div>
+          <div class="souvenir-image-option" data-image="images/image10.jpg">
+            <img src="images/image10.jpg" alt="Option 10" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="image-placeholder" style="display:none;">Image 10</div>
+          </div>
+        </div>
+        
+        <div class="step-actions">
+          <button class="souvenir-btn secondary" onclick="goToSouvenirStep(1)">
+            ← Back
+          </button>
+          <button class="souvenir-btn primary" id="createSouvenir" disabled>
+            Create Souvenir →
+          </button>
+        </div>
+      </div>
+
+      <!-- Step 3: Preview and Actions -->
+      <div class="souvenir-step" id="step3">
+        <h2 class="section-title">Your Souvenir is Ready!</h2>
+        
+        <div class="souvenir-preview">
+          <canvas id="souvenirCanvas"></canvas>
+        </div>
+        
+        <div class="step-actions">
+          <button class="souvenir-btn secondary" onclick="goToSouvenirStep(2)">
+            ← Back
+          </button>
+          <button class="souvenir-btn success" id="copyImageBtn">
+            <i class="fas fa-copy"></i> Copy Image
+          </button>
+          <button class="souvenir-btn primary" id="shareImageBtn">
+            <i class="fas fa-share-alt"></i> Share
+          </button>
+          <button class="souvenir-btn secondary" onclick="startSouvenirOver()">
+            Create Another
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- YouTube IFrame API -->
+  <script src="https://www.youtube.com/iframe_api"></script>
+
+  <!-- Project Details -->
+  <section class="about-film" id="about-film">
+    <div class="container">
+      <div class="header">
+        <h1>About This Film</h1>
+        <div class="quote">
+          "Some places stay with you, long after you've moved on."
+        </div>
+        <div class="divider"></div>
+        <div class="description">
+          <p>This film captures a moment suspended in time—the quiet aftermath of celebration, when empty spaces hold the echoes of what once was. It's about the relationship between memory and place, how buildings and corridors become repositories of our experiences, keeping them safe long after we've moved on.</p>
+          <p>In the stillness of an empty campus, we find not absence, but presence— the gentle persistence of memory in the spaces that shaped us.</p>
+        </div>
+      </div>
+
+      <div class="content-grid">
+        <div class="card why-film">
+          <h2>Why This Film?</h2>
+          <p>"I walked through the campus after everyone had left, and the stillness moved me. It wasn't empty — it was full of echoes. I wanted to document this feeling of endings that don't feel like an end."</p>
+        </div>
+
+        <div class="card filming-notes">
+          <h2>Filming Notes:</h2>
+          <div class="detail">
+            <span class="label">Location:</span> NYU Abu Dhabi
+          </div>
+          <div class="detail">
+            <span class="label">Season:</span> Summer 2025
+          </div>
+          <div class="detail">
+            <span class="label">Equipment:</span> iPhone 14 Pro
+          </div>
+          <div class="detail">
+            <span class="label">Sound:</span> Licensed track — [Insert Name Here]
+          </div>
+        </div>
+      </div>
+
+      <div class="documentation-section">
+        <button class="doc-button">Read My Documentation</button>
+        <div class="doc-text">Explore the complete creative process, behind-the-scenes insights, and artistic vision that brought this film and website to life.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section with Profile Card -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-title-image-container">
+        <h2 class="section-title">ABOUT ME</h2>
+        <img src="images/image13.jpg" alt="Bit about me image" class="about-image">
+      </div>
+      <div class="profile-card-container">
+        <div class="profile-card">
+          <!-- Front Face -->
+          <div class="card-face card-front">
+            <img src="images/image11.jpg" alt="Iqra Bano" class="avatar" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'140\' height=\'140\' viewBox=\'0 0 140 140\'%3E%3Crect width=\'140\' height=\'140\' rx=\'20\' fill=\'%23f0f0f0\'/%3E%3Ctext x=\'70\' y=\'75\' text-anchor=\'middle\' font-family=\'Arial\' font-size=\'12\' fill=\'%23666\'%3EImage 11%3C/text%3E%3C/svg%3E'">
+            
+            <div class="name">Iqra Bano</div>
+            
+            <p class="bio bio-short">Double Major Interactive Media & Psychology Student @ NYU Abu Dhabi</p>
+            
+            <div class="bio bio-long">
+              I'm an Interactive Media student with a deep interest in how memory lives in space. My work often explores quiet narratives — the kinds you feel more than hear. <em>After the Applause</em> began as a simple walk through campus, but turned into a film about presence, absence, and the stories that stay even after people leave.
+            </div>
+            
+            <div class="contact-section">
+              <div class="contact-title">Contact Information</div>
+              <div class="contact-info">
+                NYU Abu Dhabi | ib2419@nyu.edu | iqraxbano@gmail.com
+              </div>
+            </div>
+            
+            <div class="linkedin-container">
+              <a href="https://linkedin.com/in/iqraabano" class="linkedin-button" target="_blank">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" fill="white"/>
+                </svg>
+                Connect
+              </a>
+            </div>
+          </div>
+          
+          <!-- Back Face -->
+          <div class="card-face card-back">
+            <img src="images/image12.jpg" alt="Iqra Bano" class="avatar" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'140\' height=\'140\' viewBox=\'0 0 140 140\'%3E%3Crect width=\'140\' height=\'140\' rx=\'20\' fill=\'%23e8e8e8\'/%3E%3Ctext x=\'70\' y=\'75\' text-anchor=\'middle\' font-family=\'Arial\' font-size=\'12\' fill=\'%23555\'%3EImage 12%3C/text%3E%3C/svg%3E'">
+            
+            <div class="name">Iqra Bano</div>
+            
+            <p class="bio bio-short">UX/UI Designer & Visual Storyteller</p>
+            
+            <div class="bio bio-long">
+              I'm an Interactive Media student with a deep interest in how memory lives in space. My work often explores quiet narratives — the kinds you feel more than hear. <em>After the Applause</em> began as a simple walk through campus, but turned into a film about presence, absence, and the stories that stay even after people leave.
+            </div>
+            
+            <div class="contact-section">
+              <div class="contact-title">Contact Information</div>
+              <div class="contact-info">
+                NYU Abu Dhabi | ib2419@nyu.edu | iqraxbano@gmail.com
+              </div>
+            </div>
+            
+            <div class="linkedin-container">
+              <a href="https://linkedin.com/in/iqraabano" class="linkedin-button" target="_blank">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" fill="white"/>
+                </svg>
+                Connect
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">Reach Out</h2>
+      <form class="contact-form" onsubmit="alert('Message sent! (This is a demo)'); return false;">
+        <div class="form-group">
+          <input type="text" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Your Email" required />
+        </div>
+        <div class="form-group">
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <img src="images/image15.jpg" alt="Small cat image" style="width: 50px; margin-bottom: 20px;">
+      <p>©2025 | Iqra Bano Communication Lab Website | All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="animations.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
